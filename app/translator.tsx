@@ -1,3 +1,9 @@
+import { ThemedText } from "@/components/ThemedText.js";
+import { ThemedView } from "@/components/ThemedView.js";
+import { IconSymbol } from "@/components/ui/IconSymbol.js";
+import { Colors } from "@/constants/Colors.js";
+import { useColorScheme } from "@/hooks/useColorScheme.web.js";
+
 import { CameraType, CameraView, useCameraPermissions } from "expo-camera";
 import { Stack, useRouter } from "expo-router";
 import * as Speech from "expo-speech";
@@ -8,12 +14,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
-import { IconSymbol } from "@/components/ui/IconSymbol";
-import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme";
 
 // Simulated recognition phrases
 const RECOGNITION_PHRASES = [

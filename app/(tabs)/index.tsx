@@ -1,11 +1,10 @@
+import { HelloWave } from "@/components/HelloWave.js";
+import { ThemedText } from "@/components/ThemedText.js";
+import { ThemedView } from "@/components/ThemedView.js";
+import { Colors } from "@/constants/Colors.js";
+import { useColorScheme } from "@/hooks/useColorScheme.web.js";
 import { useRouter } from "expo-router";
 import { StyleSheet, TouchableOpacity } from "react-native";
-
-import { HelloWave } from "@/components/HelloWave";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
-import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme";
 
 export default function HomeScreen() {
   const router = useRouter();
